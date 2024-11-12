@@ -64,22 +64,21 @@ ________________________________________________________________________________
 ↓↓↓↓↓   content div & Banner image    ↓↓↓↓↓
 ________________________________________________________________________________________________________________________________*/
   .content {
+    box-sizing: border-box;
     max-width: 600px;
     height: 100%;
     margin: auto;
     /* padding: 20px; */
     background: #696969;
-    padding-top:50px;
+    padding-top:1 0px;
   }
   /* .content h1 {
     background: #696969;
     background: linear-gradient(to bottom right, #800080, #4B0082);
   } */
-  .banner {
-    display: flex;
-  }
 
-  div img{
+  /* This one looks after the banner div inside the pages */
+  .banner div img {
     display: flex;
     width: 100%;
     height: 300px;
@@ -100,17 +99,74 @@ ________________________________________________________________________________
 
 
 /* Character previews / list */
-.character-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
+.rankings-wrapper{
   border: 1px solid #fafafa;
 }
-.character-preview h2 {
+
+
+.character-wrapper {
+  display:flex; 
+  flex-direction:row;
+  padding: 0px 16px 0px 16px;
+  /* margin: 20px 0; */
+  /* border: 1px solid #fafafa; */
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.character-wrapper h2 {
   font-size: 20px;
   color: #f1356d;
-  margin-bottom: 8px;
+}
+.character-wrapper img{
+  /* position: static;  
+  justify-content: left; */
+  height:100px;
+  width: 100px;
+  /* border: 1px solid #fafafa; */
+  
+
+}
+.character-info{
+  display:flex; 
+  flex-direction:row; 
+  border: 1px solid #fafafa;
+  color: #f1356d;
+  height:100px;
+  width: 100%;
+}
+.character-img{
 }
 
-
+/* align-items does vertical and justify-content does horizontal */
+.rank{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height:100px;
+  width: 75px;
+  border: 1px solid #fafafa;
+}
+.column-wrapper {
+  display:flex; 
+  flex-direction:row;
+  padding: 0px 16px 0px 16px;
+  /* margin: 20px 0; */
+  /* border: 1px solid #fafafa; */
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.rank-title {
+  height:100%;
+  width: 75px;
+  border: 1px solid #fafafa;
+}
+.info-title {
+  display:flex; 
+  flex-direction:row; 
+  border: 1px solid #fafafa;
+  color: #f1356d;
+  height:100%;
+  width: 100%;
+}
 
 

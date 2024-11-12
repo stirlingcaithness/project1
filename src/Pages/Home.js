@@ -3,7 +3,9 @@ import HomeBanner from "../Components/HomeBanner";
 const Home = () => {
     return ( 
         <div className="outer-content">
-            <HomeBanner title={"A Collection of my Favourite AMVs'"} />
+            <div className="banner">
+                <HomeBanner title={"A Collection of my Favourite AMVs'"} />
+            </div>
         <div className="content">
         <h1>Home page</h1>
         <p>As a welcome, allow me to elaborate on both my 

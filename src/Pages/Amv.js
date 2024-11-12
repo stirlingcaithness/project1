@@ -3,9 +3,11 @@ import HomeBanner from "../Components/HomeBanner";
 const Amv = () => {
     return ( 
         <div className="outer-content">
-            <HomeBanner title={"A Collection of my Favourite AMVs'"} />
+            <div className="banner">
+                <HomeBanner title={"A Collection of my Favourite AMVs'"} />
+            </div>
         <div className="content">
-        <h1>Anime page</h1>
+        <h1>AMV page</h1>
         <p>As a welcome, allow me to elaborate on both my 
             favourite anime and my favourite anime charater 
             to give you a sense of the genre im into</p>
